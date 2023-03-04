@@ -1,0 +1,36 @@
+{
+  "name": "reveal.sdk.dom.ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "unpkg": "./dist/umd/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c ",
+    "prepack": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-terser": "^0.3.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "nodemon": "^2.0.20",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rollup": "^3.9.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "jszip": "^3.10.1"
+  }
+}
